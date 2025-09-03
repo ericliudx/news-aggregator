@@ -1,0 +1,5 @@
+streamlit
+requests
+newspaper3k
+transformers
+torch
