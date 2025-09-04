@@ -4,6 +4,8 @@ from news_agent import NewsAgent
 
 st.title("News Aggregator Agent")
 
+
+
 api_key = st.text_input("Enter your NewsAPI key", type="password")
 query = st.text_input("Search topic", "technology")
 

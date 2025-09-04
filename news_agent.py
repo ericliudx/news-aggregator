@@ -3,7 +3,7 @@ from transformers import pipeline
 
 
 class NewsAgent:
-  def __init__(self, api_key, query="technology", model="facebook/bart-large-cnn"):
+  def __init__(self, api_key, query="technology", model="sshleifer/distilbart-cnn-12-6"):
     self.api_key = api_key
     self.summarizer = pipeline("summarization", model=model)
     self.query = query
