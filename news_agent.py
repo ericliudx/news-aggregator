@@ -23,7 +23,7 @@ class NewsAgent:
     print(summary[0])
     return summary[0]['summary_text'] 
 
-  def get_summaries(self, query, limit = 5):
+  def get_summaries(self, query, limit):
     articles = self.fetch_news(query)
     results = []
     for article in articles[:limit]:
