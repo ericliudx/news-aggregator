@@ -21,3 +21,10 @@ if st.button("Fetch News"):
       st.subheader(article["title"])
       st.write(article["url"])
       st.write("**Summary:**", article["summary"])
+
+if st.button("Test Articles"):
+  if not api_key:
+    st.error("Please provide a NewsAPI Key")
+  else:
+    agent = NewsAgent(api_key)
+    print ("sigma")
