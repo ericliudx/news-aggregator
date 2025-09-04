@@ -26,4 +26,5 @@ if st.button("Test Articles"):
   if not api_key:
     st.error("Please provide a NewsAPI Key")
   else:
+    agent = NewsAgent(api_key)
     st.warning("sigma sigma sigma")
